@@ -1,0 +1,363 @@
+import type { Dictionary } from "../types";
+
+export const uz: Dictionary = {
+  nav: [
+    { id: "imkoniyat", label: "Nega biz?" },
+    { id: "kurslar", label: "Kurslar" },
+    { id: "metod", label: "Metodika" },
+    { id: "natijalar", label: "Natijalar" },
+    { id: "filiallar", label: "Filiallar" },
+    { id: "savol", label: "Savol-javob" },
+  ],
+  common: {
+    register: "Ro'yxatdan o'tish",
+    consult: "Maslahat olish",
+    enroll: "Yoziling",
+    callUs: "Qo'ng'iroq qiling",
+    questionCta: "Sizga qaysi filial qulay?",
+    phoneLabel: "Telefon",
+  },
+  hero: {
+    badge: "8 yil • 20 000+ bitiruvchi • 97% natija",
+    titleTop: "Ingliz tili — endi",
+    titleAccent: "bahona emas, natija.",
+    subtitle:
+      "Yillab “o'rganaman” deb yurgan minglab namanganliklar START21'da 4 oyda IELTS 6.5+ va CEFR B2 sertifikatini qo'lga kiritdi. Endi navbat — sizniki.",
+    ctaPrimary: "Bepul sinov darsiga yoziling",
+    ctaSecondary: "Kurslarni ko'rish",
+    microtrust: "Ro'yxatdan o'tish 30 soniya • Hech qanday to'lov so'ralmaydi",
+    statBoxes: [
+      { k: "8", l: "yil tajriba" },
+      { k: "20 000+", l: "bitiruvchi" },
+      { k: "97%", l: "natija" },
+      { k: "6", l: "filial" },
+    ],
+    chips: ["IELTS", "CEFR", "SAT", "DTM", "General English"],
+    floating: [
+      { value: "6.5+", label: "O'rtacha IELTS ball" },
+      { value: "97%", label: "Imtihondan o'tish" },
+    ],
+    callLine: "Savol bormi? Qo'ng'iroq qiling:",
+  },
+  trustItems: [
+    "IELTS 6.5+ kafolatli metodika",
+    "CEFR B2 — 7 oyda",
+    "Xalqaro sertifikatli ustozlar",
+    "Haftalik progress nazorati",
+    "Online mentorlik tizimi",
+    "SAT — chet el universitetlari uchun",
+    "6 ta zamonaviy filial",
+    "20 000+ bitiruvchi",
+  ],
+  stats: [
+    { value: 8, suffix: "", label: "yillik tajriba", sub: "2017-yildan beri uzluksiz" },
+    { value: 20000, suffix: "+", label: "bitiruvchi", sub: "orzusiga yetgan o'quvchilar" },
+    { value: 97, suffix: "%", label: "imtihondan o'tish", sub: "birinchi urinishdayoq" },
+    { value: 6, suffix: " ta", label: "filial", sub: "Namangan bo'ylab shahar va tumanlarda" },
+  ],
+  why: {
+    kicker: "Nega aynan START21?",
+    title: "Ko'p markaz va'da beradi.",
+    titleHi: "Biz — natija beramiz.",
+    subtitle:
+      "Til o'rganishda muvaffaqiyatsizlikning sababi — sizning qobiliyatingiz emas, tizimsizlikdir. Mana shu 6 ustun har bir o'quvchimizni natijaga olib boradi.",
+    features: [
+      {
+        icon: "target",
+        title: "Natija — kafolat bilan",
+        text: "Metodikamizga shu qadar ishonamizki, belgilangan ballni olmasangiz — keyingi guruhda bepul o'qiysiz. Biz so'z bermaymiz, natija beramiz.",
+        accent: "lime",
+      },
+      {
+        icon: "radar",
+        title: "Har hafta — aniq progress",
+        text: "Haftalik test, oraliq baho va ustozning shaxsiy fikri. Qayerda turganingizni taxmin qilmaysiz — raqamlarda ko'rasiz.",
+        accent: "sky",
+      },
+      {
+        icon: "mentor",
+        title: "Mentor — doim yoningizda",
+        text: "Savolingiz darsdan tashqarida tug'ildimi? Mentoringizga yozasiz, javobsiz qolmaydi. Yolg'iz kurashmaysiz.",
+        accent: "mint",
+      },
+      {
+        icon: "monitor",
+        title: "Onlayn nazorat tizimi",
+        text: "Davomat, ball va uy vazifasi — hammasi bitta tizimda. Ota-ona ham, o'quvchi ham real vaqtda kuzatib boradi.",
+        accent: "amber",
+      },
+      {
+        icon: "badge",
+        title: "Xalqaro sertifikatli ustozlar",
+        text: "IELTS, CEFR va SAT bo'yicha rasmiy sertifikatga ega ustozlar. Imtihonni o'zi topshirgan inson sizni ham tayyorlaydi.",
+        accent: "coral",
+      },
+      {
+        icon: "spark",
+        title: "Zerikarli emas — ishlaydigan dars",
+        text: "Quruq grammatika emas, real vaziyatlarda gapirtiruvchi metodika. Birinchi oydan boshlab ingliz tilida fikrlaysiz.",
+        accent: "lime",
+      },
+    ],
+  },
+  courses: {
+    kicker: "Kurslarimiz",
+    title: "Maqsadingizni tanlang — yo'lni biz ko'rsatamiz",
+    subtitle:
+      "Har bir kurs aniq natijaga moslangan: sertifikat, ball yoki chet el. Noaniqlik yo'q — faqat o'lchanadigan maqsad.",
+    groupLabel: "guruh",
+    items: [
+      {
+        slug: "ielts",
+        name: "IELTS",
+        tag: "Eng ko'p tanlangan",
+        outcome: "Maqsad: 6.5+ band va chet elga yo'l",
+        duration: "4 oy",
+        perWeek: "haftasiga 3 kun",
+        format: "Offline",
+        level: "Intermediate +",
+        highlights: ["Real imtihon formati", "Speaking — har dars", "Mock testlar"],
+        popular: true,
+      },
+      {
+        slug: "cefr",
+        name: "CEFR",
+        tag: "Tezkor sertifikat",
+        outcome: "Maqsad: B2 — 7 oyda noldan",
+        duration: "7 oy",
+        perWeek: "haftasiga 3 kun",
+        format: "Offline",
+        level: "0 → B2",
+        highlights: ["Milliy sertifikat", "Grant uchun ball", "Tizimli daraja"],
+      },
+      {
+        slug: "sat",
+        name: "SAT",
+        tag: "Chet el universiteti",
+        outcome: "Maqsad: yuqori ball, xorijiy grant",
+        duration: "6 oy",
+        perWeek: "haftasiga 3 kun",
+        format: "Offline",
+        level: "Advanced",
+        highlights: ["Math + Verbal", "AQSh formati", "Strategiya darslari"],
+      },
+      {
+        slug: "intensive-ielts",
+        name: "Intensive IELTS",
+        tag: "Tez natija",
+        outcome: "Maqsad: kamida 5.5, qisqa muddatda",
+        duration: "4 oy",
+        perWeek: "haftasiga 3 kun",
+        format: "Offline",
+        level: "Pre-Intermediate +",
+        highlights: ["Jadal sur'at", "Kunlik amaliyot", "Imtihonga shay"],
+      },
+      {
+        slug: "general-english",
+        name: "General English",
+        tag: "Mustahkam poydevor",
+        outcome: "Maqsad: noldan ishonchli gapirish",
+        duration: "8 oy / 4 daraja",
+        perWeek: "haftasiga 3 kun",
+        format: "Offline",
+        level: "0 → Upper",
+        highlights: ["4 bosqich", "Kundalik suhbat", "Talaffuz ustida ish"],
+      },
+      {
+        slug: "dtm",
+        name: "DTM & Milliy sertifikat",
+        tag: "Imtihonga aniq",
+        outcome: "Maqsad: oliygohga kirish balli",
+        duration: "Moslashuvchan",
+        perWeek: "haftasiga 3 kun",
+        format: "Offline",
+        level: "Maktab/Abituriyent",
+        highlights: ["Uzluksiz nazorat", "Individual yondashuv", "Test texnikasi"],
+      },
+    ],
+  },
+  method: {
+    kicker: "Metodika",
+    titlePlain: "4 qadam — ",
+    titleAccent: "noldan sertifikatgacha",
+    subtitle:
+      "Bizning tizim tasodifga o'rin qoldirmaydi. Har bir o'quvchi aynan shu yo'ldan o'tib, kafolatlangan natijaga keladi.",
+    steps: [
+      {
+        step: "01",
+        title: "Bepul daraja aniqlash",
+        text: "Birinchi qadamda darajangizni aniqlaymiz va aynan sizga mos guruhni tanlaymiz. Vaqtingizni noto'g'ri guruhda behuda sarflamaysiz.",
+      },
+      {
+        step: "02",
+        title: "Aniq maqsad va reja",
+        text: "“Shunchaki o'rganish” yo'q. Maqsadingiz — IELTS 6.5, CEFR B2 yoki grant — yozib qo'yiladi va unga olib boradigan haftalik reja tuziladi.",
+      },
+      {
+        step: "03",
+        title: "Har hafta o'lchanadigan natija",
+        text: "Test, feedback va onlayn nazorat. Har hafta bir pog'ona yuqori ko'tarilganingizni o'z ko'zingiz bilan ko'rasiz.",
+      },
+      {
+        step: "04",
+        title: "Imtihon va sertifikat",
+        text: "Mock imtihonlardan o'tib, real imtihonga ishonch bilan kirasiz. Natija — qo'lingizdagi sertifikat va ochilgan eshiklar.",
+      },
+    ],
+  },
+  results: {
+    kicker: "O'quvchilar natijalari",
+    titlePlain: "Ularning natijasi — ",
+    titleAccent: "sizning ertangi kuningiz",
+    subtitle:
+      "Bu raqamlar orqasida — chet elga uchgan, grant yutgan, ish topgan real insonlar turibdi.",
+    bigStats: [
+      { k: "20 000+", l: "bitiruvchi orzusiga yetdi", accent: "lime" },
+      { k: "97%", l: "imtihondan birinchi urinishda o'tdi", accent: "mint" },
+      { k: "6.5+", l: "o'rtacha IELTS bandi", accent: "sky" },
+      { k: "4.9★", l: "o'quvchilar bahosi", accent: "amber" },
+    ],
+    items: [
+      {
+        name: "Dilnoza R.",
+        result: "IELTS 7.0",
+        course: "IELTS kursi",
+        quote:
+          "2 yil o'zim urinib yurdim, 5.5 dan nariga o'tolmadim. START21'da 4 oyda 7.0 oldim. Farqi — mentor va haftalik nazoratda edi. Endi maqsadim chet el.",
+      },
+      {
+        name: "Jasur T.",
+        result: "CEFR C1",
+        course: "CEFR kursi",
+        quote:
+          "Noldan boshladim, ishonmagandim. Ustozlar shu qadar tushuntiradiki, “qila olmayman” degan fikr o'zi yo'qoldi. Grantga hujjat topshirdim.",
+      },
+      {
+        name: "Madina X.",
+        result: "IELTS 6.5",
+        course: "Intensive IELTS",
+        quote:
+          "Vaqtim oz edi, intensiv guruhga yozildim. Har kuni amaliyot, har hafta test. 4 oyda 6.5 — universitetga ariza topshirishga yetdi.",
+      },
+      {
+        name: "Sardor M.",
+        result: "SAT 1380",
+        course: "SAT kursi",
+        quote:
+          "SAT'ni yolg'iz tayyorlash deyarli imkonsiz edi. Strategiya darslari ball oshirishni o'rgatdi. Xorijiy universitetdan taklif oldim.",
+      },
+    ],
+  },
+  branches: {
+    kicker: "Filiallar",
+    title: "Eng yaqin filialda — bugundan boshlang",
+    subtitle:
+      "Namangan shahri va tumanlari bo'ylab 6+ zamonaviy filial. Uydan chiqib, 10 daqiqada o'qishga yetib boradigan joyni tanlang.",
+    ctaCard: "Sizga qaysi filial qulay?",
+    items: [
+      { name: "Chorsu", area: "Namangan shahri", note: "Bosh filial" },
+      { name: "Davlatobod", area: "Namangan shahri", note: "Zamonaviy sinflar" },
+      { name: "Lola", area: "Namangan shahri", note: "Qulay joylashuv" },
+      { name: "Toshbuloq", area: "Namangan shahri", note: "Katta zal" },
+      { name: "Chortoq", area: "Chortoq tumani", note: "Tuman markazi" },
+      { name: "Chust", area: "Chust tumani", note: "Tuman markazi" },
+      { name: "Uchqo'rg'on", area: "Uchqo'rg'on tumani", note: "Tuman markazi" },
+    ],
+  },
+  faq: {
+    kicker: "Savol-javob",
+    title: "Hali ikkilanyapsizmi? Mana javoblar",
+    subtitle:
+      "Eng ko'p beriladigan savollar. Javobini topmadingizmi — bizga yozing, 5 daqiqada javob beramiz.",
+    items: [
+      {
+        q: "Ingliz tilini noldan bilmayman, qiynalmaymanmi?",
+        a: "Yo'q. O'quvchilarimizning ko'pchiligi noldan boshlagan. Darajangizni aniqlab, aynan o'zingizga mos guruhga qo'shamiz va mentor har qadamda yoningizda bo'ladi.",
+      },
+      {
+        q: "Belgilangan ballni ololmasam-chi?",
+        a: "Metodikamizga ishonchimiz komil. Dars qoidalariga rioya qilib, belgilangan natijaga yetmasangiz — keyingi guruhda qo'shimcha to'lovsiz davom etasiz. Tavakkal sizda emas, bizda.",
+      },
+      {
+        q: "Ishlayman/o'qiyman, vaqtim mos keladimi?",
+        a: "Ertalabki, kunduzgi va kechki guruhlarimiz bor. Ro'yxatdan o'tganingizda jadvalingizga eng mos vaqtni birga tanlaymiz.",
+      },
+      {
+        q: "Qaysi kursni tanlashni bilmayapman?",
+        a: "Tashvishlanmang — bu bizning ishimiz. Bepul maslahatda maqsadingizni so'rab, IELTS, CEFR yoki SAT'dan qaysi biri sizga foyda berishini aniq aytamiz.",
+      },
+      {
+        q: "Online o'qisa bo'ladimi?",
+        a: "Asosiy darslar offline — chunki jonli muhitda til tez ochiladi. Lekin nazorat, vazifa va mentorlik to'liq onlayn tizim orqali boriladi.",
+      },
+    ],
+  },
+  register: {
+    badge: "Yangi guruhlar ochilmoqda",
+    title: "Bir daqiqa — va orzuyingiz yo'lga chiqadi",
+    text: "Formani to'ldiring, operatorimiz bog'lanib, sizga eng mos guruh va qulay jadvalni tanlashda yordam beradi. Hech qanday majburiyat yo'q.",
+    benefits: [
+      "Bepul daraja aniqlash testi",
+      "Maqsadingizga mos kurs tavsiyasi",
+      "Joylar cheklangan — guruhlar tez to'ladi",
+    ],
+    formTitle: "Ro'yxatdan o'ting",
+    nameLabel: "Ismingiz",
+    namePlaceholder: "Ism familiya",
+    phoneLabel: "Telefon raqamingiz",
+    courseLabel: "Kurs",
+    branchLabel: "Filial",
+    optional: "(ixtiyoriy)",
+    selectPlaceholder: "Tanlang",
+    submit: "Bepul joyni band qilish",
+    submitting: "Yuborilmoqda...",
+    consent:
+      "Tugmani bosish orqali siz bilan bog'lanishimizga rozilik bildirasiz. Ma'lumotlaringiz uchinchi shaxslarga berilmaydi.",
+    successTitle: "Arizangiz qabul qilindi! 🎉",
+    successId: "Ariza raqami:",
+    telegramCta: "Telegram kanalimizga obuna bo'ling",
+    errors: {
+      name: "Ismingizni kiriting",
+      phone: "To'liq raqam kiriting",
+      course: "Kursni tanlang",
+      form: "Yuborishda xatolik. Telegram orqali urinib ko'ring.",
+    },
+    courseOptions: [
+      "IELTS",
+      "CEFR",
+      "SAT",
+      "Intensive IELTS",
+      "General English",
+      "DTM & Milliy sertifikat",
+      "Rus tili",
+      "Hali aniq emas",
+    ],
+  },
+  finalCta: {
+    kicker: "Bir yil keyin o'zingizga rahmat ayting",
+    title: "Eng yaxshi vaqt — bugun.",
+    text: "Har kuni kechiktirgan har bir kun — ochilmagan imkoniyat. Bepul sinov darsiga yozilib, START21 metodikasini o'z ko'zingiz bilan ko'ring. Hech narsa yo'qotmaysiz, hammasini yutasiz.",
+    button: "Bepul joyni band qilish",
+  },
+  footer: {
+    about:
+      "Namangandagi natija beradigan ingliz tili o'quv markazi. IELTS, CEFR, SAT va DTM bo'yicha xalqaro darajadagi tayyorgarlik.",
+    nav: "Bo'limlar",
+    contact: "Bog'lanish",
+    rights: "Barcha huquqlar himoyalangan.",
+    builtFor: "Natija beradigan ingliz tili kurslari",
+  },
+  meta: {
+    title: "START21 — Natija beradigan ingliz tili kurslari | Namangan",
+    description:
+      "Namangandagi №1 ingliz tili o'quv markazi. IELTS, CEFR, SAT va DTM kurslari. 8 yil tajriba, 20 000+ bitiruvchi, 97% natija. Bepul sinov darsiga yoziling.",
+    keywords: [
+      "ingliz tili kurslari Namangan",
+      "IELTS Namangan",
+      "CEFR kurslari",
+      "SAT tayyorlov",
+      "DTM ingliz tili",
+      "START21",
+    ],
+  },
+};

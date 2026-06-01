@@ -1,0 +1,363 @@
+import type { Dictionary } from "../types";
+
+export const en: Dictionary = {
+  nav: [
+    { id: "imkoniyat", label: "Why us?" },
+    { id: "kurslar", label: "Courses" },
+    { id: "metod", label: "Method" },
+    { id: "natijalar", label: "Results" },
+    { id: "filiallar", label: "Branches" },
+    { id: "savol", label: "FAQ" },
+  ],
+  common: {
+    register: "Register",
+    consult: "Get advice",
+    enroll: "Enroll",
+    callUs: "Call us",
+    questionCta: "Which branch suits you?",
+    phoneLabel: "Phone",
+  },
+  hero: {
+    badge: "8 years • 20,000+ graduates • 97% success",
+    titleTop: "English — now a",
+    titleAccent: "result, not a wish.",
+    subtitle:
+      "Thousands who spent years “meaning to learn” English earned an IELTS 6.5+ and CEFR B2 certificate at START21 in just 4 months. Now it's your turn.",
+    ctaPrimary: "Book a free trial lesson",
+    ctaSecondary: "View courses",
+    microtrust: "Sign up in 30 seconds • No payment required",
+    statBoxes: [
+      { k: "8", l: "years of experience" },
+      { k: "20,000+", l: "graduates" },
+      { k: "97%", l: "success rate" },
+      { k: "6", l: "branches" },
+    ],
+    chips: ["IELTS", "CEFR", "SAT", "DTM", "General English"],
+    floating: [
+      { value: "6.5+", label: "Average IELTS score" },
+      { value: "97%", label: "Pass the exam" },
+    ],
+    callLine: "Have a question? Call us:",
+  },
+  trustItems: [
+    "IELTS 6.5+ guaranteed method",
+    "CEFR B2 — in 7 months",
+    "Internationally certified teachers",
+    "Weekly progress tracking",
+    "Online mentorship system",
+    "SAT — for universities abroad",
+    "6 modern branches",
+    "20,000+ graduates",
+  ],
+  stats: [
+    { value: 8, suffix: "", label: "years of experience", sub: "uninterrupted since 2017" },
+    { value: 20000, suffix: "+", label: "graduates", sub: "students who reached their goal" },
+    { value: 97, suffix: "%", label: "pass the exam", sub: "on the very first attempt" },
+    { value: 6, suffix: "", label: "branches", sub: "across Namangan city and districts" },
+  ],
+  why: {
+    kicker: "Why START21?",
+    title: "Many centers make promises.",
+    titleHi: "We deliver results.",
+    subtitle:
+      "The reason language learning fails is not your ability — it's the lack of a system. These 6 pillars carry every one of our students to a result.",
+    features: [
+      {
+        icon: "target",
+        title: "Results — guaranteed",
+        text: "We're so confident in our method that if you don't hit your target score, you study the next group for free. We don't make promises — we deliver results.",
+        accent: "lime",
+      },
+      {
+        icon: "radar",
+        title: "Clear progress every week",
+        text: "Weekly tests, interim grades and personal feedback from your teacher. You don't guess where you stand — you see it in numbers.",
+        accent: "sky",
+      },
+      {
+        icon: "mentor",
+        title: "A mentor — always by your side",
+        text: "Got a question outside class? Message your mentor — you won't be left without an answer. You never struggle alone.",
+        accent: "mint",
+      },
+      {
+        icon: "monitor",
+        title: "Online tracking system",
+        text: "Attendance, scores and homework — all in one system. Both parent and student follow along in real time.",
+        accent: "amber",
+      },
+      {
+        icon: "badge",
+        title: "Internationally certified teachers",
+        text: "Teachers with official IELTS, CEFR and SAT certificates. The person who passed the exam themselves prepares you too.",
+        accent: "coral",
+      },
+      {
+        icon: "spark",
+        title: "Not boring — it works",
+        text: "Not dry grammar, but a method that gets you speaking in real situations. From the first month you start thinking in English.",
+        accent: "lime",
+      },
+    ],
+  },
+  courses: {
+    kicker: "Our courses",
+    title: "Choose your goal — we'll show the way",
+    subtitle:
+      "Every course is built around a concrete outcome: a certificate, a score, or studying abroad. No vagueness — only a measurable goal.",
+    groupLabel: "group",
+    items: [
+      {
+        slug: "ielts",
+        name: "IELTS",
+        tag: "Most chosen",
+        outcome: "Goal: 6.5+ band and a path abroad",
+        duration: "4 months",
+        perWeek: "3 days a week",
+        format: "Offline",
+        level: "Intermediate +",
+        highlights: ["Real exam format", "Speaking — every lesson", "Mock tests"],
+        popular: true,
+      },
+      {
+        slug: "cefr",
+        name: "CEFR",
+        tag: "Fast certificate",
+        outcome: "Goal: B2 — from zero in 7 months",
+        duration: "7 months",
+        perWeek: "3 days a week",
+        format: "Offline",
+        level: "0 → B2",
+        highlights: ["National certificate", "Score for grants", "Structured levels"],
+      },
+      {
+        slug: "sat",
+        name: "SAT",
+        tag: "University abroad",
+        outcome: "Goal: high score, foreign grant",
+        duration: "6 months",
+        perWeek: "3 days a week",
+        format: "Offline",
+        level: "Advanced",
+        highlights: ["Math + Verbal", "US format", "Strategy lessons"],
+      },
+      {
+        slug: "intensive-ielts",
+        name: "Intensive IELTS",
+        tag: "Fast result",
+        outcome: "Goal: at least 5.5, in a short time",
+        duration: "4 months",
+        perWeek: "3 days a week",
+        format: "Offline",
+        level: "Pre-Intermediate +",
+        highlights: ["Intensive pace", "Daily practice", "Exam-ready"],
+      },
+      {
+        slug: "general-english",
+        name: "General English",
+        tag: "Solid foundation",
+        outcome: "Goal: confident speaking from zero",
+        duration: "8 months / 4 levels",
+        perWeek: "3 days a week",
+        format: "Offline",
+        level: "0 → Upper",
+        highlights: ["4 stages", "Daily conversation", "Pronunciation work"],
+      },
+      {
+        slug: "dtm",
+        name: "DTM & national cert.",
+        tag: "Exam-precise",
+        outcome: "Goal: a university entry score",
+        duration: "Flexible",
+        perWeek: "3 days a week",
+        format: "Offline",
+        level: "School/Applicant",
+        highlights: ["Continuous tracking", "Individual approach", "Test technique"],
+      },
+    ],
+  },
+  method: {
+    kicker: "Method",
+    titlePlain: "4 steps — ",
+    titleAccent: "from zero to certificate",
+    subtitle:
+      "Our system leaves nothing to chance. Every student follows exactly this path and arrives at a guaranteed result.",
+    steps: [
+      {
+        step: "01",
+        title: "Free level assessment",
+        text: "First we determine your level and pick the group that fits you. You won't waste time in the wrong group.",
+      },
+      {
+        step: "02",
+        title: "Clear goal and plan",
+        text: "No “just learning”. Your goal — IELTS 6.5, CEFR B2 or a grant — is written down, and a weekly plan is built to reach it.",
+      },
+      {
+        step: "03",
+        title: "A measurable result every week",
+        text: "Tests, feedback and online tracking. Every week you see with your own eyes that you've climbed a level higher.",
+      },
+      {
+        step: "04",
+        title: "Exam and certificate",
+        text: "Having passed mock exams, you walk into the real one with confidence. The result — a certificate in hand and doors open.",
+      },
+    ],
+  },
+  results: {
+    kicker: "Student results",
+    titlePlain: "Their result — ",
+    titleAccent: "your tomorrow",
+    subtitle:
+      "Behind these numbers are real people who flew abroad, won grants and landed jobs.",
+    bigStats: [
+      { k: "20,000+", l: "graduates reached their goal", accent: "lime" },
+      { k: "97%", l: "pass the exam on the first try", accent: "mint" },
+      { k: "6.5+", l: "average IELTS band", accent: "sky" },
+      { k: "4.9★", l: "student rating", accent: "amber" },
+    ],
+    items: [
+      {
+        name: "Dilnoza R.",
+        result: "IELTS 7.0",
+        course: "IELTS course",
+        quote:
+          "I tried for 2 years on my own and couldn't get past 5.5. At START21 I got 7.0 in 4 months. The difference was the mentor and weekly tracking. Now my goal is studying abroad.",
+      },
+      {
+        name: "Jasur T.",
+        result: "CEFR C1",
+        course: "CEFR course",
+        quote:
+          "I started from zero and didn't believe in myself. The teachers explain so well that the thought “I can't do this” simply vanished. I applied for a grant.",
+      },
+      {
+        name: "Madina X.",
+        result: "IELTS 6.5",
+        course: "Intensive IELTS",
+        quote:
+          "I was short on time, so I joined the intensive group. Practice every day, a test every week. 6.5 in 4 months — enough to apply to university.",
+      },
+      {
+        name: "Sardor M.",
+        result: "SAT 1380",
+        course: "SAT course",
+        quote:
+          "Preparing for the SAT alone is almost impossible. The strategy lessons taught me how to raise my score. I received an offer from a university abroad.",
+      },
+    ],
+  },
+  branches: {
+    kicker: "Branches",
+    title: "At the nearest branch — start today",
+    subtitle:
+      "6+ modern branches across Namangan city and its districts. Choose a location you can reach within 10 minutes of leaving home.",
+    ctaCard: "Which branch suits you?",
+    items: [
+      { name: "Chorsu", area: "Namangan city", note: "Main branch" },
+      { name: "Davlatobod", area: "Namangan city", note: "Modern classrooms" },
+      { name: "Lola", area: "Namangan city", note: "Convenient location" },
+      { name: "Toshbuloq", area: "Namangan city", note: "Large hall" },
+      { name: "Chortoq", area: "Chortoq district", note: "District center" },
+      { name: "Chust", area: "Chust district", note: "District center" },
+      { name: "Uchqo'rg'on", area: "Uchqo'rg'on district", note: "District center" },
+    ],
+  },
+  faq: {
+    kicker: "FAQ",
+    title: "Still hesitating? Here are the answers",
+    subtitle:
+      "The most common questions. Didn't find yours — message us and we'll reply within 5 minutes.",
+    items: [
+      {
+        q: "I don't know any English — won't it be too hard?",
+        a: "No. Most of our students started from zero. We assess your level, place you in the right group, and a mentor is by your side every step of the way.",
+      },
+      {
+        q: "What if I don't reach the target score?",
+        a: "We're confident in our method. If you follow the rules and don't reach your goal, you continue in the next group at no extra cost. The risk is on us, not you.",
+      },
+      {
+        q: "I work/study — will the schedule fit?",
+        a: "We have morning, daytime and evening groups. When you sign up, we'll choose the time that fits your schedule best, together.",
+      },
+      {
+        q: "I don't know which course to choose.",
+        a: "Don't worry — that's our job. In a free consultation we ask about your goal and tell you exactly which fits: IELTS, CEFR or SAT.",
+      },
+      {
+        q: "Can I study online?",
+        a: "Main classes are offline — language opens up faster in a live setting. But tracking, homework and mentorship run fully through our online system.",
+      },
+    ],
+  },
+  register: {
+    badge: "New groups are opening",
+    title: "One minute — and your dream is on its way",
+    text: "Fill in the form and our operator will get in touch and help you choose the right group and a convenient schedule. No obligation whatsoever.",
+    benefits: [
+      "Free level assessment test",
+      "A course recommendation for your goal",
+      "Limited seats — groups fill up fast",
+    ],
+    formTitle: "Register",
+    nameLabel: "Your name",
+    namePlaceholder: "First and last name",
+    phoneLabel: "Phone number",
+    courseLabel: "Course",
+    branchLabel: "Branch",
+    optional: "(optional)",
+    selectPlaceholder: "Choose",
+    submit: "Reserve my free seat",
+    submitting: "Sending...",
+    consent:
+      "By clicking the button you agree to be contacted. Your data is never shared with third parties.",
+    successTitle: "Your request is in! 🎉",
+    successId: "Request ID:",
+    telegramCta: "Subscribe to our Telegram channel",
+    errors: {
+      name: "Enter your name",
+      phone: "Enter a complete number",
+      course: "Choose a course",
+      form: "Submission error. Try via Telegram.",
+    },
+    courseOptions: [
+      "IELTS",
+      "CEFR",
+      "SAT",
+      "Intensive IELTS",
+      "General English",
+      "DTM & national cert.",
+      "Russian language",
+      "Not sure yet",
+    ],
+  },
+  finalCta: {
+    kicker: "A year from now, thank yourself",
+    title: "The best time is today.",
+    text: "Every day you put it off is an opportunity left unopened. Book a free trial lesson and see the START21 method for yourself. You lose nothing and gain everything.",
+    button: "Reserve my free seat",
+  },
+  footer: {
+    about:
+      "An English language center in Namangan that delivers results. International-level preparation for IELTS, CEFR, SAT and DTM.",
+    nav: "Sections",
+    contact: "Contact",
+    rights: "All rights reserved.",
+    builtFor: "English courses that deliver results",
+  },
+  meta: {
+    title: "START21 — English courses that deliver results | Namangan",
+    description:
+      "The #1 English language center in Namangan. IELTS, CEFR, SAT and DTM courses. 8 years of experience, 20,000+ graduates, 97% success. Book a free trial lesson.",
+    keywords: [
+      "English courses Namangan",
+      "IELTS Namangan",
+      "CEFR courses",
+      "SAT preparation",
+      "DTM English",
+      "START21",
+    ],
+  },
+};

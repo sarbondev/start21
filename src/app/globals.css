@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+/* ============================================================
+   START21 — Design tokens
+   Brand: deep teal canvas + electric lime accent (from original)
+   ============================================================ */
+@theme {
+  /* Surfaces */
+  --color-ink: #00100f;
+  --color-bg: #001413;
+  --color-bg-2: #001a18;
+  --color-surface: #002423;
+  --color-surface-2: #00302e;
+  --color-surface-3: #013b38;
+  --color-line: rgba(230, 255, 44, 0.12);
+  --color-line-soft: rgba(255, 255, 255, 0.08);
+
+  /* Brand accent — electric lime */
+  --color-lime: #e6ff2c;
+  --color-lime-bright: #f0ff5a;
+  --color-lime-deep: #c4e000;
+
+  /* Secondary accents (from original palette) */
+  --color-coral: #f95d51;
+  --color-sky: #2bb6ff;
+  --color-mint: #62c584;
+  --color-amber: #ffab00;
+
+  /* Text */
+  --color-cloud: #f4fff2;
+  --color-muted: #9fb3ad;
+  --color-faint: #6d827d;
+
+  /* Fonts */
+  --font-display: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+
+  /* Radii */
+  --radius-card: 20px;
+
+  /* Easing */
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ---------- Base ---------- */
+* {
+  border-color: var(--color-line-soft);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-cloud);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-lime);
+  color: #001110;
+}
+
+/* Focus rings (a11y) */
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 2px solid var(--color-lime);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Numeric alignment */
+.tnum {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* ---------- Utilities ---------- */
+.container-x {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+@media (min-width: 640px) {
+  .container-x { padding-inline: 2rem; }
+}
+@media (min-width: 1024px) {
+  .container-x { padding-inline: 2.5rem; }
+}
+
+/* Glow text accent */
+.text-glow {
+  text-shadow: 0 0 32px rgba(230, 255, 44, 0.35);
+}
+
+/* Grain / noise overlay handled via radial gradients in components */
+
+/* Animated gradient border */
+.ring-line {
+  border: 1px solid var(--color-line);
+}
+
+/* Marquee */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 32s linear infinite;
+}
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+/* Floating bob */
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-bob { animation: bob 6s var(--ease-out-quint) infinite; }
+
+/* Soft pulse for live dot */
+@keyframes livepulse {
+  0% { box-shadow: 0 0 0 0 rgba(230, 255, 44, 0.6); }
+  70% { box-shadow: 0 0 0 8px rgba(230, 255, 44, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(230, 255, 44, 0); }
+}
+.animate-livepulse { animation: livepulse 2.4s infinite; }
+
+/* Aurora / spotlight backdrop */
+.aurora {
+  background:
+    radial-gradient(60% 50% at 50% 0%, rgba(230, 255, 44, 0.10), transparent 70%),
+    radial-gradient(40% 40% at 85% 20%, rgba(43, 182, 255, 0.08), transparent 70%),
+    radial-gradient(45% 45% at 12% 30%, rgba(98, 197, 132, 0.07), transparent 70%);
+}
+
+/* Dotted grid */
+.grid-dots {
+  background-image: radial-gradient(rgba(230, 255, 44, 0.10) 1px, transparent 1px);
+  background-size: 22px 22px;
+  -webkit-mask-image: radial-gradient(70% 60% at 50% 0%, #000, transparent 75%);
+  mask-image: radial-gradient(70% 60% at 50% 0%, #000, transparent 75%);
+}
+
+/* Card hover lift */
+.lift {
+  transition: transform 0.35s var(--ease-out-quint), border-color 0.35s ease, background-color 0.35s ease;
+}
+.lift:hover {
+  transform: translateY(-6px);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-bob, .animate-marquee { animation: none !important; }
+}
+
+/* Hide scrollbar for horizontal scrollers */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
