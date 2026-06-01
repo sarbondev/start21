@@ -58,3 +58,4 @@ src/
 - **Matnlar**: barcha marketing matnlari `src/lib/i18n/dictionaries/*.ts` da — tahrirlash oson.
 - **Ranglar**: brend tokenlari `src/app/globals.css` `@theme` blokida (lime `#e6ff2c`, teal fon).
 - **Logo**: hozir original CDN URL'idan olinmoqda (`SITE.logo`).
+# start21
